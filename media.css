@@ -1,0 +1,128 @@
+@media screen and(max-width:639px){
+    div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 200px);
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g";
+    gap: 10px;
+}
+    
+div>section{
+    background-color: rgb(172, 127, 255);
+}
+
+}
+div > :nth-of-type(1){
+        grid-area:a;
+}
+div > :nth-of-type(2){
+        grid-area:b;
+}
+div > :nth-of-type(3){
+        grid-area:c;
+}
+div > :nth-of-type(4){
+        grid-area:d;
+}
+div > :nth-of-type(5){
+        grid-area:e;
+}
+div > :nth-of-type(6){
+    grid-area:f;
+}
+div > :nth-of-type(7){
+        grid-area:g;
+}
+    
+}
+
+
+
+@media screen and(min-width:640px), (orientation:landscape){
+    div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 200px);
+        grid-template-areas: 
+        "a a"
+        "b c"
+        "d e"
+        "d f"
+        "g g";
+        gap: 10px;
+    }
+    
+    section{
+        background-color: palevioletred;
+    }
+    div > :nth-of-type(1){
+        grid-area:a;
+    }
+    div > :nth-of-type(2){
+        grid-area:b;
+    }
+    div > :nth-of-type(3){
+        grid-area:c;
+    }
+    div > :nth-of-type(4){
+        grid-area:d;
+    }
+    div > :nth-of-type(5){
+        grid-area:e;
+    }
+    div > :nth-of-type(6){
+    grid-area:f;
+    }
+    div > :nth-of-type(7){
+        grid-area:g;
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 200px);
+        grid-template-areas: 
+        "a a a"
+        "b c d"
+        "e f d"
+        "e f d"
+        "g g g";
+        gap: 10px;
+    }
+    
+    div>section{
+        background-color: turquoise;
+    }
+    
+    div > :nth-of-type(1){
+        grid-area:a;
+    }
+    div > :nth-of-type(2){
+        grid-area:b;
+    }
+    div > :nth-of-type(3){
+        grid-area:c;
+    }
+    div > :nth-of-type(4){
+        grid-area:d;
+    }
+    div > :nth-of-type(5){
+        grid-area:e;
+    }
+    div > :nth-of-type(6){
+    grid-area:f;
+    }
+    div > :nth-of-type(7){
+        grid-area:g;
+    }
+}
