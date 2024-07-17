@@ -1,0 +1,22 @@
+.image-gallery{
+    display: flex;
+    flex-wrap:nowrap;
+    
+}
+
+div img{
+    overflow:hidden;
+    width: 200px;
+    height: 200px;
+    transition: transform 1s ease;
+    opacity:0.9;
+    margin: 15px;
+
+
+}
+
+div img:hover{
+    transform: scale(1.2);
+    
+
+}
